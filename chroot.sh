@@ -24,6 +24,8 @@ pacman -S --noconfirm --needed sudo zsh os-prober gnome-keyring networkmanager g
 systemctl enable NetworkManager
 systemctl enable dhcpcd.service
 
+systemctl enable iwd
+
 systemctl enable netctl-auto@wlp3s0
 systemctl enable netctl-auto@wlp3s0.service
 systemctl enable netctl-ifplugd@enp4s0f1

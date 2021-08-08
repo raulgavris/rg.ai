@@ -44,7 +44,7 @@ echo "en_US ISO-8859-1" >> /etc/locale.gen
 echo "ro_RO ISO-8859-2" >> /etc/locale.gen
 locale-gen
 
-pacstrap /mnt base base-devel linux linux-firmware vim dialog git networkmanager man-db man-pages intel-ucode
+pacstrap /mnt base base-devel linux linux-firmware vim dialog git iwd iw networkmanager man-db man-pages intel-ucode
 
 genfstab -U /mnt >> /mnt/etc/fstab # again after mounting the boot partition and clean fstab
 
